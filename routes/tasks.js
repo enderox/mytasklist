@@ -90,10 +90,4 @@ router.put('/task/:id', function(req, res, next){
     }
 });
 
-
-// define the about route
-router.get('/about', function (req, res) {
-  res.send('About birds');
-});
-
 module.exports = router

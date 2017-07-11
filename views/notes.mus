@@ -1,0 +1,18 @@
+{{>partials/header}}
+
+<div class="container">
+<header class="jumbotron">
+    <div class="container">
+       <h1>Notes</h1>
+         <p>Notes are here</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="/notes/addNote">Add new Note</a>
+            </p>
+    </div>
+</header>
+</div>
+</div>
+
+
+
+{{>partials/footer}}

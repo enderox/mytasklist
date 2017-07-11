@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index.js');
 var tasks = require('./routes/tasks.js');
+var notes = require('./routes/notes.js');
 
 var port = 3000;
 
@@ -28,6 +29,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
 app.use('/api', tasks);
+app.use('/nt', notes);
 
 app.listen(port, function(){
     console.log('Server started on port '+port);

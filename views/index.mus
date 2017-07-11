@@ -1,9 +1,31 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Mytasklist</title>
-        </head>
-        <body>
-            <h1>findexxx</h1>
-        </body>
-    </html>
+{{>partials/header}}
+
+<div class="container">
+<header class="jumbotron">
+    <div class="container">
+       <h1>Welcome to World of Notes</h1>
+         <p>Note World</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="/nt/notes">Add new Note</a>
+            </p>
+    </div>
+</header>
+
+<div class="row text-center" style="display:flex flex-wrap:wrap">
+/*{{#campgrounds}}
+    
+      <div class="col-md-3 col-sm-6">
+         <div class="thumbnail">
+           <img src="{{image}}">  
+           <div>
+            <h4 class="caption">{{name}}</h4>   
+           </div>
+           <p>
+               <a href="/campgrounds/{{_id}}" class="btn btn-primary">More Info</a>
+           </p>
+         </div>
+      </div>
+
+{{/campgrounds}}*/
+</div>
+</div>
