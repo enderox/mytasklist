@@ -3,16 +3,25 @@
 <div class="container">
 <header class="jumbotron">
     <div class="container">
-       <h1>Notes</h1>
-         <p>Notes are here</p>
+       <h2>My Notes</h2>
+         <div class="row text-center" style="display:flex flex-wrap:wrap">
+
+        {{#subjects}}
+    
+      <div class="col-md-12 col-sm-6">
+         <div class="thumbnail">
+           <div>
+            <h4 class="caption">{{note}}</h4>
+           </div>
+         </div>
+      </div>
+
+        {{/subjects}}
+        
+        </div>
             <p>
-                <a class="btn btn-primary btn-large" href="/notes/addNote">Add new Note</a>
+                <a class="btn btn-primary btn-large" href="/notes">Update Note</a>
             </p>
     </div>
 </header>
 </div>
-</div>
-
-
-
-{{>partials/footer}}

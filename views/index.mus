@@ -3,29 +3,25 @@
 <div class="container">
 <header class="jumbotron">
     <div class="container">
-       <h1>Welcome to World of Notes</h1>
-         <p>Note World</p>
-            <p>
-                <a class="btn btn-primary btn-large" href="/nt/notes">Add new Note</a>
-            </p>
-    </div>
-</header>
+       <h2>My Subjects</h2>
+         <div class="row text-center" style="display:flex flex-wrap:wrap">
 
-<div class="row text-center" style="display:flex flex-wrap:wrap">
-/*{{#campgrounds}}
+        {{#subjects}}
     
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-4 col-sm-6">
          <div class="thumbnail">
-           <img src="{{image}}">  
            <div>
-            <h4 class="caption">{{name}}</h4>   
+            <h4 class="caption"><a href="/note/{{_id}}">{{subname}}</a></h4>
            </div>
-           <p>
-               <a href="/campgrounds/{{_id}}" class="btn btn-primary">More Info</a>
-           </p>
          </div>
       </div>
 
-{{/campgrounds}}*/
-</div>
+        {{/subjects}}
+        
+        </div>
+            <p>
+                <a class="btn btn-primary btn-large" href="/notes">Add new subject</a>
+            </p>
+    </div>
+</header>
 </div>
